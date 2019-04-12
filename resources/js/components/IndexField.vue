@@ -6,7 +6,7 @@
 		<portal to="modals">
 			<transition name="fade">
 				<modal  v-if="openModal" @modal-close="openModal = false">
-					<div :class="field.modalOptions" v-html="field.view"></div>
+					<div :class="field.modalClasses" v-html="field.view"></div>
 				</modal>
 			</transition>
 		</portal>

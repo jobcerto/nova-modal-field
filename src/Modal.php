@@ -14,8 +14,18 @@ class Modal extends Button
      */
     public $component = 'nova-modal-field';
 
-    public function open($view, $options)
+    public function open($view)
     {
-        return $this->withMeta(['view' => $view, 'modalOptions' => $options]);
+        return $this->withMeta(['view' => $view]);
+    }
+
+    public function fields($fields)
+    {
+        return $this->withMeta(['fields' => $fields]);
+    }
+
+    public function modalClasses($classes)
+    {
+        return $this->withMeta(['modalClasses' => $classes]);
     }
 }
