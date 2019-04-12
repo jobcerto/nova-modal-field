@@ -6,22 +6,29 @@
         "nova"
     ],
     "license": "MIT",
-    "require": {
-        "php": ">=7.1.0"
+    "require":
+    {
+        "php": ">=7.1.0",
+        "dillingham/nova-button": "^1.0"
     },
-    "autoload": {
-        "psr-4": {
+    "autoload":
+    {
+        "psr-4":
+        {
             "Jobcerto\\NovaModal\\": "src/"
         }
     },
-    "extra": {
-        "laravel": {
+    "extra":
+    {
+        "laravel":
+        {
             "providers": [
                 "Jobcerto\\NovaModal\\FieldServiceProvider"
             ]
         }
     },
-    "config": {
+    "config":
+    {
         "sort-packages": true
     },
     "minimum-stability": "dev",
